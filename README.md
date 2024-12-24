@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LibraryApp README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1, h2 {
-            color: #555;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        pre {
-            background: #eee;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
-</head>
+
 <body>
     <h1>LibraryApp</h1>
     <p>LibraryApp is a web application designed to manage and display a collection of books. It allows users to add, view, and organize books in a user-friendly interface.</p>
