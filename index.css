@@ -1,0 +1,152 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("../assets/background_img.png"); /* Path to your image */
+    background-repeat: repeat; /* Repeats the background both horizontally and vertically */
+    background-size: auto; /* Keeps the original size of the image */
+    background-attachment: fixed; /* Background stays fixed during scrolling */
+    background-position: top left; /* Ensures the starting position is the top-left corner */
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes default body padding */
+}
+
+
+/* Style for the cards */
+.card {
+    display: flex;
+    flex-direction: column; /* Stack card content vertically */
+    justify-content: center; /* Center content within the card */
+    align-items: center; /* Align content in the center horizontally */
+    padding: 20px; /* Space inside the card */
+    background-color: white; /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center card content */
+    width: 100%; /* Card width auto-adjusts */
+    height: auto; /* Allow content to dictate height */
+    overflow: hidden; /* Prevent overflow of content */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Center the main container content */
+#container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add space around the container */
+    width: 100%; /* Full-width container */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+/* Grid layout for the table containing cards */
+.table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cards stretch evenly */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Space around the grid */
+    width: 100%; /* Full grid width */
+    max-width: 1200px; /* Optional: Limit the maximum grid width */
+    box-sizing: border-box; /* Include padding in total width */
+}
+/* Style the Add Book button */
+button {
+    margin: 20px 0; /* Add space above and below the button */
+    padding: 10px 20px; /* Add padding for better visuals */
+    font-size: 16px; /* Increase font size for readability */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth background change on hover */
+}
+
+/* Hover effect for the Add Book button */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the dialog box */
+dialog {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for the dialog */
+    padding: 20px; /* Add padding inside the dialog */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 50%; /* Set a fixed width for the dialog */
+    max-width: 90%; /* Ensure responsiveness on smaller screens */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style the header */
+h1 {
+    text-align: center; /* Center-align the header */
+    margin-top: 20px; /* Add space above the header */
+    font-size: 2.5rem; /* Larger font size */
+    color: #333; /* Darker text color */
+}
+
+
+/* Modal styling */
+dialog {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    animation: zoomInDown 0.2s ease-in-out;
+    position: relative;
+}
+
+/* Animation for modal appearance */
+@keyframes zoomInDown {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Centering the modal */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+/* Form styling */
+#forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input field styling */
+#forms label {
+    font-size: 14px;
+    color: #555;
+}
+
+#forms input[type="text"],
+#forms input[type="number"],
+#forms input[type="radio"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#forms input[type="radio"] {
+    width: auto;
+}
